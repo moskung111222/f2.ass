@@ -104,3 +104,27 @@ public void start(){
   			break;
   		case KeyEvent.VK_D:
   			difficulty += 0.1;
+break;
+ 		}
+ 	}
+ 
+ 	public long getScore(){
+ 		return score;
+ 	}
+ 	
+ 	@Override
+ 	public void keyPressed(KeyEvent e) {
+ 		controlVehicle(e);
+ 		
+ 	}
+ 
+ 	@Override
+ 	public void keyReleased(KeyEvent e) {
+ 		//do nothing
+ 	}
+ 
+ 	@Override
+ 	public void keyTyped(KeyEvent e) {
+ 		//do nothing		
+ 	}
+ }
