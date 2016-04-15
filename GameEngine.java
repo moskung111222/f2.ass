@@ -64,8 +64,8 @@ public void start(){
   			if(!e.isAlive()){
   				e_iter.remove();
   				gp.sprites.remove(e);
- -				score += 100;
- +				score += 200;
+ 				score += 100;
+ 				score += 200;
   			}
   		}
   		
@@ -88,19 +88,19 @@ public void start(){
   	
   	void controlVehicle(KeyEvent e) {
   		switch (e.getKeyCode()) {
- +		case KeyEvent.VK_UP:
- +			v.move(0,-1);
- +			break;
- +		case KeyEvent.VK_DOWN:
- +			v.move(0,1);
- +			break;
+ 		case KeyEvent.VK_UP:
+ 			v.move(0,-1);
+ 		break;
+ 		case KeyEvent.VK_DOWN:
+ 			v.move(0,1);
+ 			break;
   		case KeyEvent.VK_LEFT:
- -			v.move(-1);
- +			v.move(-1,0);
+ 			v.move(-1);
+ 			v.move(-1,0);
   			break;
   		case KeyEvent.VK_RIGHT:
- -			v.move(1);
- +			v.move(1,0);
+ 			v.move(1);
+ 			v.move(1,0);
   			break;
   		case KeyEvent.VK_D:
   			difficulty += 0.1;
