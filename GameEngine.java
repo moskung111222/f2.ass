@@ -73,7 +73,7 @@ public class GameEngine implements KeyListener, GameReporter{
       if(!e.isAlive()){
         e_iter.remove();
         gp.sprites.remove(e);
-        score += 200;
+        score += 100;
       }
     }
 
@@ -113,7 +113,7 @@ public class GameEngine implements KeyListener, GameReporter{
       tr = it.getRectangle();
       if(tr.intersects(vr)){  
         gp.sprites.remove(it);
-        scoreItem += 500;
+        scoreItem += 200;
       }
     }
   }
